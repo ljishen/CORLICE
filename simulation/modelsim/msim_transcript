@@ -1,0 +1,688 @@
+# do corlice_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Modifying /home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+/home/ubuntu/workdir/corlice {/home/ubuntu/workdir/corlice/corlice.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:19:24 on May 22,2017
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ubuntu/workdir/corlice" /home/ubuntu/workdir/corlice/corlice.v 
+# -- Compiling module corlice
+# -- Compiling module mux
+# 
+# Top level modules:
+# 	corlice
+# 	mux
+# End time: 05:19:24 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:19:38 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash_function
+# -- Compiling module default_hash_function_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_function_tb
+# End time: 05:19:38 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:19:40 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash_function
+# -- Compiling module default_hash_function_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_function_tb
+# End time: 05:19:40 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.default_hash_function_tb
+# vsim work.default_hash_function_tb 
+# Start time: 05:19:43 on May 22,2017
+# Loading work.default_hash_function_tb
+# Loading work.default_hash_function
+add wave -position insertpoint sim:/default_hash_function_tb/*
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# coe_a is =         x
+# coe_b is =         x
+# lg_size is =         x
+# res is =xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:42:12 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:42:12 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:42:13 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:42:13 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart 
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# coe_a is =         x
+# coe_b is =         x
+# lg_size is =         x
+# res is =xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:44:01 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:44:01 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart 
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# coe_a is =         x
+# coe_b is =         x
+# lg_size is =         x
+# res is =xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:44:27 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:44:27 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:44:29 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:44:29 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.default_hash_tb
+# End time: 05:44:33 on May 22,2017, Elapsed time: 0:24:50
+# Errors: 0, Warnings: 0
+# vsim work.default_hash_tb 
+# Start time: 05:44:33 on May 22,2017
+# Loading work.default_hash_tb
+# Loading work.default_hash
+add wave -position insertpoint sim:/default_hash_tb/*
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# COE_A is =          2
+# COE_B is =          3
+# LG_SIZE is =         32
+# res is =0000000000000003
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:52:31 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:52:31 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# COE_A is =         25
+# COE_B is =          7
+# LG_SIZE is =         32
+# res is =0000000000000015
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 05:57:06 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 05:57:06 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is =aaaaaaaabbbbbbbb
+# upper is =aaaaaaaa
+# mask is =ffffffff
+# lower is =bbbbbbbb
+# COE_A is =         25
+# COE_B is =        190
+# LG_SIZE is =         32
+# res is =                 155
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:34:12 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
+# End time: 06:34:12 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:34:12 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
+# End time: 06:34:12 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:34:16 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
+# End time: 06:34:16 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:34:17 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
+# End time: 06:34:17 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:38:44 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 9989788709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd9989788709) or reduce the literal value to fit in 32 bits.
+# End time: 06:38:44 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:48:49 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 06:48:49 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:48:51 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 06:48:51 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# res is                    0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 06:52:14 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 06:52:14 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# res is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:00:03 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:00:03 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# upper * COE_A is 2584233268
+# lower * COE_B is 2448861929
+# res is                    1
+# A time value could not be extracted from the current line
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:06:51 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:06:51 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart 
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 2584233268
+# lower * COE_B is 2448861929
+# res is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:13:17 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:13:17 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart 
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:17:15 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:17:15 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:20:28 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:20:28 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    3
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:23:16 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:23:16 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# `ADDR_WIDTH is          64
+# res is                    3
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:23:50 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:23:50 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    3
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:24:36 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:24:36 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:24:49 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:24:49 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    3
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:26:07 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:26:07 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is           1856283510
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:30:08 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:30:08 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffaaaaaaffbbbbbb
+# upper is ffaaaaaa
+# lower is ffbbbbbb
+# COE_A is fff39832
+# COE_B is 6f23ffab
+# upper * COE_A is 18419237585311778100
+# lower * COE_B is  8000183456689990377
+# res is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:40:10 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:40:10 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffbbbbbbffbbbbbb
+# upper is ffbbbbbb
+# lower is ffbbbbbb
+# COE_A is 6f23ffab
+# COE_B is 6f23ffab
+# upper * COE_A is  8000183456689990377
+# lower * COE_B is  8000183456689990377
+# res is                    3
+# Load canceled
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:41:42 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:41:42 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffbbbbbbffbbbbbb
+# upper is ffbbbbbb
+# lower is ffbbbbbb
+# COE_A is 6f23ffab
+# COE_B is 6f23ffab
+# upper * COE_A is  8000183456689990377
+# lower * COE_B is  8000183456689990377
+# res is           3725375727
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:43:48 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:43:48 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffbbbbbbffbbbbbb
+# upper is ffbbbbbb
+# lower is ffbbbbbb
+# COE_A is 6f23ffab
+# COE_B is 1f23ffab
+# upper * COE_A is  8000183456689990377
+# lower * COE_B is  2241580734143179497
+# res is           2384596548
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 07:44:07 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
+# -- Compiling module cuckoo_hash_map
+# -- Compiling module default_hash
+# -- Compiling module default_hash_tb
+# 
+# Top level modules:
+# 	cuckoo_hash_map
+# 	default_hash_tb
+# End time: 07:44:07 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+run
+restart
+# Loading work.default_hash_tb
+# Loading work.default_hash
+run
+# sva is ffbbbbbbffbbbbbb
+# upper is ffbbbbbb
+# lower is ffbbbbbb
+# COE_A is 6f23ffab
+# COE_B is 1f23ffab
+# upper * COE_A is  8000183456689990377
+# lower * COE_B is  2241580734143179497
+# res is                    2

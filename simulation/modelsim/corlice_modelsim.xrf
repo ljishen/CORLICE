@@ -1,0 +1,10 @@
+vendor_name = ModelSim
+source_file = 1, /home/ubuntu/workdir/corlice/corlice.v
+source_file = 1, /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
+source_file = 1, /home/ubuntu/workdir/corlice/db/corlice.cbx.xml
+design_name = corlice
+instance = comp, \led[0]~output , led[0]~output, corlice, 1
+instance = comp, \sw[0]~input , sw[0]~input, corlice, 1
+instance = comp, \sw[1]~input , sw[1]~input, corlice, 1
+instance = comp, \sw[2]~input , sw[2]~input, corlice, 1
+instance = comp, \~QUARTUS_CREATED_GND~I , ~QUARTUS_CREATED_GND~I, corlice, 1
