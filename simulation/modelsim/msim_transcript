@@ -10,7 +10,7 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/ubuntu/workdir/corlice {/home/ubuntu/workdir/corlice/corlice.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:19:24 on May 22,2017
+# Start time: 17:15:58 on May 22,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ubuntu/workdir/corlice" /home/ubuntu/workdir/corlice/corlice.v 
 # -- Compiling module corlice
 # -- Compiling module mux
@@ -18,53 +18,12 @@
 # Top level modules:
 # 	corlice
 # 	mux
-# End time: 05:19:24 on May 22,2017, Elapsed time: 0:00:00
+# End time: 17:15:58 on May 22,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:19:38 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash_function
-# -- Compiling module default_hash_function_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_function_tb
-# End time: 05:19:38 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:19:40 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash_function
-# -- Compiling module default_hash_function_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_function_tb
-# End time: 05:19:40 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.default_hash_function_tb
-# vsim work.default_hash_function_tb 
-# Start time: 05:19:43 on May 22,2017
-# Loading work.default_hash_function_tb
-# Loading work.default_hash_function
-add wave -position insertpoint sim:/default_hash_function_tb/*
-run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# coe_a is =         x
-# coe_b is =         x
-# lg_size is =         x
-# res is =xxxxxxxxxxxxxxxx
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:42:12 on May 22,2017
+# Start time: 17:16:18 on May 22,2017
 # vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
 # -- Compiling module cuckoo_hash_map
 # -- Compiling module default_hash
@@ -73,616 +32,1291 @@ vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map
 # Top level modules:
 # 	cuckoo_hash_map
 # 	default_hash_tb
-# End time: 05:42:12 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:42:13 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:42:13 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart 
-run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# coe_a is =         x
-# coe_b is =         x
-# lg_size is =         x
-# res is =xxxxxxxxxxxxxxxx
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:44:01 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:44:01 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart 
-run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# coe_a is =         x
-# coe_b is =         x
-# lg_size is =         x
-# res is =xxxxxxxxxxxxxxxx
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:44:27 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:44:27 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:44:29 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:44:29 on May 22,2017, Elapsed time: 0:00:00
+# End time: 17:16:18 on May 22,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 vsim work.default_hash_tb
-# End time: 05:44:33 on May 22,2017, Elapsed time: 0:24:50
-# Errors: 0, Warnings: 0
 # vsim work.default_hash_tb 
-# Start time: 05:44:33 on May 22,2017
+# Start time: 17:23:02 on May 22,2017
 # Loading work.default_hash_tb
 # Loading work.default_hash
+-sv_seed
+# invalid command name "-sv_seed"
 add wave -position insertpoint sim:/default_hash_tb/*
 run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# COE_A is =          2
-# COE_B is =          3
-# LG_SIZE is =         32
-# res is =0000000000000003
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:52:31 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:52:31 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# COE_A is =         25
-# COE_B is =          7
-# LG_SIZE is =         32
-# res is =0000000000000015
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:57:06 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 05:57:06 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is =aaaaaaaabbbbbbbb
-# upper is =aaaaaaaa
-# mask is =ffffffff
-# lower is =bbbbbbbb
-# COE_A is =         25
-# COE_B is =        190
-# LG_SIZE is =         32
-# res is =                 155
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:34:12 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
-# End time: 06:34:12 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:34:12 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
-# End time: 06:34:12 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:34:16 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
-# End time: 06:34:16 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:34:17 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 19897868709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd19897868709) or reduce the literal value to fit in 32 bits.
-# End time: 06:34:17 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:38:44 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# ** Error: /home/ubuntu/workdir/corlice/cuckoo_hash_map.v(37): (vlog-13008) Unsized literal value 9989788709 exceeds default size of literals which  is 32-bit. Either size the literal (i.e. 64'd9989788709) or reduce the literal value to fit in 32 bits.
-# End time: 06:38:44 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:48:49 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 06:48:49 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:48:51 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 06:48:51 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# res is                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:52:14 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 06:52:14 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# res is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:00:03 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:00:03 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# upper * COE_A is 2584233268
-# lower * COE_B is 2448861929
-# res is                    1
-# A time value could not be extracted from the current line
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:06:51 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:06:51 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart 
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 2584233268
-# lower * COE_B is 2448861929
-# res is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:13:17 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:13:17 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart 
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:17:15 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:17:15 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:20:28 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:20:28 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:23:16 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:23:16 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# `ADDR_WIDTH is          64
-# res is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:23:50 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:23:50 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:36 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:24:36 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:49 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:24:49 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:26:07 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:26:07 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is           1856283510
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:30:08 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:30:08 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffaaaaaaffbbbbbb
-# upper is ffaaaaaa
-# lower is ffbbbbbb
-# COE_A is fff39832
-# COE_B is 6f23ffab
-# upper * COE_A is 18419237585311778100
-# lower * COE_B is  8000183456689990377
-# res is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:40:10 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:40:10 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
 # sva is ffbbbbbbffbbbbbb
 # upper is ffbbbbbb
 # lower is ffbbbbbb
-# COE_A is 6f23ffab
-# COE_B is 6f23ffab
-# upper * COE_A is  8000183456689990377
-# lower * COE_B is  8000183456689990377
-# res is                    3
-# Load canceled
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:41:42 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:41:42 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffbbbbbbffbbbbbb
-# upper is ffbbbbbb
-# lower is ffbbbbbb
-# COE_A is 6f23ffab
-# COE_B is 6f23ffab
-# upper * COE_A is  8000183456689990377
-# lower * COE_B is  8000183456689990377
-# res is           3725375727
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:43:48 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:43:48 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffbbbbbbffbbbbbb
-# upper is ffbbbbbb
-# lower is ffbbbbbb
-# COE_A is 6f23ffab
-# COE_B is 1f23ffab
-# upper * COE_A is  8000183456689990377
-# lower * COE_B is  2241580734143179497
-# res is           2384596548
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:44:07 on May 22,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/cuckoo_hash_map.v 
-# -- Compiling module cuckoo_hash_map
-# -- Compiling module default_hash
-# -- Compiling module default_hash_tb
-# 
-# Top level modules:
-# 	cuckoo_hash_map
-# 	default_hash_tb
-# End time: 07:44:07 on May 22,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-run
-run
-restart
-# Loading work.default_hash_tb
-# Loading work.default_hash
-run
-# sva is ffbbbbbbffbbbbbb
-# upper is ffbbbbbb
-# lower is ffbbbbbb
-# COE_A is 6f23ffab
-# COE_B is 1f23ffab
-# upper * COE_A is  8000183456689990377
-# lower * COE_B is  2241580734143179497
 # res is                    2
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:36:43 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:36:43 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:36:46 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:36:46 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# Modified /home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:30 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:37:30 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:31 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:37:31 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:32 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:37:32 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:33 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:37:33 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:37:34 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:37:35 on May 22,2017, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+# Modified /home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:38:02 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:38:02 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:40:35 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(3): (vlog-2294) The 'var' keyword is missing.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:40:35 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+verror 2294
+# 
+# vlog Message # 2294:
+# In a data declaration it shall be illegal to omit the data type before a
+# list of variable declaration assignments unless the 'var' keyword is used.
+# This message will be an error in the next minor number release of Questa.
+# [DOC: IEEE Std 1800-2009 Verilog LRM - Section A.10 "Footnotes (normative)"]
+# 
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:44:22 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(15): (vlog-2730) Undefined variable: 'sav'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:44:22 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:53:47 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(33): near "new": syntax error, unexpected "SystemVerilog keyword 'new'".
+# End time: 19:53:47 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:07:07 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(2): Local nested class declaration not allowed - class 'DefaultHashFunction' must be public
+# End time: 20:07:07 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:07:36 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling program main
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(27): 'DefaultHashFunction' is an unknown type.
+# Or did you omit the '()' for an instantiation?
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): 'defaultHashFunction' is not a variable
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): Illegal LHS of assignment.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): 'new' must be used to assign to a class or covergroup handle.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(35): Questa has encountered an unexpected internal error: ../../src/vlog/vresolve.c(527). Please contact Questa support at http://supportnet.mentor.com/
+# End time: 20:07:36 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:08:19 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(27): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER or '='.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): (vlog-2730) Undefined variable: 'defaultHashFunction'.
+# End time: 20:08:19 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+c
+# ambiguous command name "c": calcDefaultSignalModeValue can_set_tcl canvas capacity_image case cat catch cd cdbg cdbg_mode cdbg_wait_for_starting cdump cgroup_image chan change changeViewMode change_dir check checkVCDMap check_svver_available check_viewer checkbutton checkicon_image checkpoint checkpointDone checkpointError ciid class class_image cleanupGui clipboard clock clock_image close closedFolder clp cm cmdSplit cmpl_add_fbox_item cmpl_arrange_fbox cmpl_create_fbox cmpl_do_compile cmpl_do_edit cmpl_doubleclick cmpl_empty_fbox cmpl_extendselect_fbox cmpl_go_up cmpl_select_fbox cmpl_select_filter cmpl_select_textitem cmpl_show_error cmpl_show_error_nc cmpl_show_last_error cmpl_unselectall_fbox cmpl_update_dir cmpl_update_fbox code column2tok comp_opt_exclusive compare compareOptionsRule compareSetDefaults compile compileDialog_ws compile_cover_dialog compile_dialog_box compile_ecom_dialog compile_edit compile_option_addfile compile_option_extension compile_option_extension_ok compile_option_incdir compile_option_libdir compile_option_macro compile_option_macro_ok compile_option_ok compile_options_dialog compile_systemc_dialog compile_vhdl_dialog compile_vlog_dialog concat config config_every_button config_image configbody configure connect_to_kernel console cont context contextOf continue contract controlbarValidateRunLengthFromInput convertVlogExtId count_image cov_opt_exclusive cover_save_create_ucdb coverage createArgsForFrames createFrames createSourceInfo create_rpc_server
+clear
+# [3;J[H[2J
+cls
+# invalid command name "cls"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:08:51 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(27): near ".": syntax error, unexpected '.', expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER or '='.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): (vlog-2730) Undefined variable: 'defaultHashFunction'.
+# End time: 20:08:51 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:27 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling program main
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(27): 'DefaultHashFunction' is an unknown type.
+# Or did you omit the '()' for an instantiation?
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): 'defaultHashFunction' is not a variable
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): Illegal LHS of assignment.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): 'new' must be used to assign to a class or covergroup handle.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(35): Questa has encountered an unexpected internal error: ../../src/vlog/vresolve.c(527). Please contact Questa support at http://supportnet.mentor.com/
+# End time: 20:09:27 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:13:22 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling program main
+# 
+# Top level modules:
+# 	main
+# End time: 20:13:22 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:13:26 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling program main
+# 
+# Top level modules:
+# 	main
+# End time: 20:13:26 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# ** Error: (vsim-3170) Could not find 'default_hash_tb'.
+#         Searched libraries:
+#             /home/ubuntu/workdir/corlice/simulation/modelsim/rtl_work
+run
+# No Design Loaded!
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:22:05 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:22:05 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.test_bench
+# vsim work.test_bench 
+# Start time: 17:23:02 on May 22,2017
+# Error loading design
+# End time: 20:22:11 on May 22,2017, Elapsed time: 2:59:09
+# Errors: 55, Warnings: 0
+vsim work.test_bench
+# vsim work.test_bench 
+# Start time: 20:22:14 on May 22,2017
+# Loading sv_std.std
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+# Warning in wave window restart: (vish-4014) No objects found matching '/default_hash_tb/res'. 
+run
+# result is:           0
+run
+run
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:24 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:23:24 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart -f
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result is:           0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:23:57 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:23:57 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.test_bench
+# End time: 20:24:02 on May 22,2017, Elapsed time: 0:01:48
+# Errors: 1, Warnings: 0
+# vsim work.test_bench 
+# Start time: 20:24:02 on May 22,2017
+# Loading sv_std.std
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+restart
+run
+# result is:           0
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+add wave -position insertpoint sim:/test_bench/*
+# (vish-4014) No objects found matching '/test_bench/*'.
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:25:38 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Error (suppressible): (vlog-8688) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(32): Illegal access to local member a.
+#         Full name of member: CuckooHashMap_sv_unit::CuckooHashMap::DefaultHashFunction::a
+#         Full name of calling scope: outside a class context
+# End time: 20:25:38 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:26:09 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:26:09 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result a is:           2
+# result b is:           3
+# result has is:           0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:26:55 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Error (suppressible): (vlog-8688) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(31): Illegal access to local member a.
+#         Full name of member: CuckooHashMap_sv_unit::CuckooHashMap::DefaultHashFunction::a
+#         Full name of calling scope: outside a class context
+# End time: 20:26:55 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:27:09 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:27:09 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result has is:           0
+add wave sim:/test_bench/*
+# (vish-4014) No objects found matching '/test_bench/*'.
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:30:24 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:30:24 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Break key hit
+# Break key hit
+run
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result has is:           0
+restart
+# Break key hit
+run
+# result has is:           0
+# couldn't load file "/home/ubuntu/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/ScintillaTk/libScintillaTk0.36.so": libstdc++.so.6: wrong ELF class: ELFCLASS64
+run
+restart
+# Break key hit
+run
+# result has is:           0
+vsim work.test_bench
+# End time: 20:34:36 on May 22,2017, Elapsed time: 0:10:34
+# Errors: 5, Warnings: 0
+# vsim work.test_bench 
+# Start time: 20:34:36 on May 22,2017
+# Loading sv_std.std
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:34:56 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:34:56 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:34:58 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:34:58 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:35:00 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:35:00 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+# result has is:           0
+run -all
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+restart
+run
+# result has is:           0
+compile
+# wrong # args: should be "compile w cmd ..."
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:36:47 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:36:47 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+run
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result has is:           0
+restart 
+run
+# Break in Module test_bench at /home/ubuntu/workdir/corlice/CuckooHashMap.sv line 29
+# Break key hit
+run -all
+# result has is:           0
+run
+run
+restart
+run
+# Break in Module test_bench at /home/ubuntu/workdir/corlice/CuckooHashMap.sv line 31
+a
+# ambiguous command name "a": abort actel_edition add addTime add_cmdhelp add_nldataflow_add_menu add_nldataflow_edit_menu add_nldataflow_file_menu add_nldataflow_tools_menu add_nldataflow_trace_menu add_nldataflow_view_menu add_toolbar_button after alias allon altera_edition analysisFileBrowserSave annotate_image announce_title append apply applyToList apply_button_adder applystimulus architecture_image archive array asrtAdd asrtAddAssertsFromHier asrtAddModuleFromHier asrtChangeHierMode asrtCheckImmediate asrtClearAll asrtClearTriggers asrtConfigDialog asrtContextTracking asrtDoBigCommand asrtDoConfig asrtDoReport asrtDragVerifyItems asrtDropHandler asrtEnableConfigInstance asrtEnableConfigOk asrtEnableInstance asrtEnableLimitEntry asrtEnableOptions asrtEnablePass asrtEnablePathname asrtEnableReportOk asrtEnableTestExtract asrtExclude asrtExcludeWithComment asrtFileBrowserSave asrtGetAllAsrts asrtGetChildrenList asrtGetDefaultConfigSetting asrtGetDisplayRow asrtGetOnlySelAsrts asrtGetSelAsrts asrtGetSelObjs asrtGetTopList asrtHierGetSelections asrtIsSelectionForWave asrtNodeNumElements asrtPopupMenu asrtReportDialog asrtSetAntcdentAction asrtSetBackground asrtSetFailAction asrtSetFailPass asrtSetForeground asrtSetLimitDefault asrtSetOptionDefault asrtSetPassAction asrtSetSelectBackground asrtSetSelectForeground asrtSetSettingsVars asrtSetStartAction asrtSetStringDefault asrtSetTriggers asrtUpdateAll asrtUpdateBrowser asrtValidateConfigInstance asrtValidateConfigOk asrtViewDecl asrtViewModuleSource asrtViewSource assertDefineMenus assertGetData assertResetBrowserData assertion assertion_clock_image assertion_cy_image assertion_message assertion_psl_image assertion_spice_image assertion_verilog_image assertionsShow assertions_destroy atmel_edition autoMap autoRestoreCrashedSchematic auto_execok auto_import auto_load auto_load_index auto_mkindex auto_mkindex_old auto_qualify auto_reset
+step
+# result has is:           0
+# Next activity is in 100 ps.
+step
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+step -over
+# Nothing left to do.
+restart
+run
+# result has is:           0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:05 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:45:05 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           0
+# result upper is:       43690
+# result mask is:       65535
+# result lower is:       48059
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:30 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:45:30 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restrt
+# invalid command name "restrt"
+restart 
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           0
+# result upper is: 0000aaaa
+# result mask is: 0000ffff
+# result lower is: 0000bbbb
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:48:56 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:48:56 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result upper is: 0000aaaa
+# result mask is: 0000ffff
+# result lower is: 0000bbbb
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:57:17 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): Field/method name (upper) not in 'defaultHashFunction'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(37): Field/method name (mask) not in 'defaultHashFunction'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(38): Field/method name (lower) not in 'defaultHashFunction'
+# End time: 20:57:17 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:57:29 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:57:29 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result res is:  1619264993
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:58:43 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:58:43 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result res is:            5914232289
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:59:20 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 20:59:20 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result res is:            2816301090
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:01:14 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:01:14 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:01:15 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:01:16 on May 22,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:01:17 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:01:17 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result res is:                     0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:03:04 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:03:04 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+restrt
+# invalid command name "restrt"
+restart 
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result res is:          32
+# result tmp is: 01
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:08 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(37): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# ** Error (suppressible): (vlog-8688) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): Illegal access to local member ADDR_WIDTH.
+#         Full name of member: CuckooHashMap_sv_unit::CuckooHashMap::DefaultHashFunction::ADDR_WIDTH
+#         Full name of calling scope: outside a class context
+# End time: 21:04:08 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 2
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:04:19 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:04:20 on May 22,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 2
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:           1
+# result tmp is: 1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:05:23 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# -- Compiling package CuckooHashMap_sv_unit
+# -- Compiling module test_bench
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(36): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:05:23 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:                    5
+# result tmp is: 1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:16 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(45): near "$display": syntax error, unexpected SYSTEM_IDENTIFIER, expecting ';'.
+# End time: 21:35:17 on May 22,2017, Elapsed time: 0:00:01
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:35:26 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(23): (vlog-2250) Function "randomHashFunction" has no return value assignment.
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:35:26 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:                    3
+# random number 1000111010110111010010100111110000010010111110000011011111100111
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:36:02 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Warning: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(23): (vlog-2250) Function "randomHashFunction" has no return value assignment.
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 21:36:02 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.CuckooHashMap_sv_unit
+# Loading work.test_bench
+run
+# result hash is:                    3
+# random number 8eb74a7c12f837e7
+# random number 3030ba1c4682679c
+# random number c73523a7519afde8
+# random number 456ee1c461604716
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:52:46 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(45): Illegal declaration after the statement near line '42'.  Declarations must precede statements.  Look for stray semicolons.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(66): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(70): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(74): near "=": syntax error, unexpected '=', expecting '('.
+# End time: 21:52:46 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:54:36 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(67): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(71): near "=": syntax error, unexpected '=', expecting '('.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(75): near "=": syntax error, unexpected '=', expecting '('.
+# End time: 21:54:36 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:01 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(57): Number of actuals and formals does not match in function call.
+# End time: 21:56:01 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 23, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:56:31 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(57): Number of actuals and formals does not match in function call.
+# End time: 21:56:31 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 23, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:57:42 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(57): Number of actuals and formals does not match in function call.
+# End time: 21:57:42 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:58:47 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(57): Number of actuals and formals does not match in function call.
+# End time: 21:58:47 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:59:49 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): near ".": syntax error, unexpected '.', expecting '\''.
+# End time: 21:59:49 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Load canceled
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:03:13 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(9): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(16): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(25): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(29): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(39): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(57): Number of actuals and formals does not match in function call.
+# End time: 22:03:13 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:03:55 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(40): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# End time: 22:03:55 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:29:37 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# -- Compiling package CuckooHashMap_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(10): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(26): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(30): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(40): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(44): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(10): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(17): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(26): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(30): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(40): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(44): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/CuckooHashMap.sv(58): Number of actuals and formals does not match in function call.
+# End time: 22:29:37 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 22:30:40 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/CuckooHashMap.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/CuckooHashMap.sv(10): near "+:": syntax error, unexpected +:.
+# End time: 22:30:40 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:10:34 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(55): near "module": syntax error, unexpected module, expecting class.
+# End time: 23:10:34 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:11:39 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(55): near "main": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 23:11:39 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:12:10 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping
+# ** Error: (vlog-13004) /home/ubuntu/workdir/corlice/addr_mapping.sv(56.3): syntax error, unexpected type name. The type 'CuckooHashMap' is defined at /home/ubuntu/workdir/corlice/addr_mapping.sv(3).
+# End time: 23:12:10 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:13:33 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(56): near "::": syntax error, unexpected ::, expecting ';'.
+# End time: 23:13:33 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:14:10 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(56): near "defaultHashFunction": syntax error, unexpected IDENTIFIER, expecting ';'.
+# End time: 23:14:10 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:14:35 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(56): near "DefaultHashFunction": syntax error, unexpected IDENTIFIER, expecting class.
+# End time: 23:14:35 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:15:06 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(28): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(32): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(28): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(32): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(60): Number of actuals and formals does not match in function call.
+# End time: 23:15:06 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:16:00 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Field/method name (ADDR_WIDTH) not in 'this'
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(60): Number of actuals and formals does not match in function call.
+# End time: 23:16:00 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 23, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:18:47 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(28): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(32): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(23): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(28): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(32): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(60): Number of actuals and formals does not match in function call.
+# End time: 23:18:47 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 21, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:20:30 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(12): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# End time: 23:20:30 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:20:42 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# End time: 23:20:42 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:20:44 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# End time: 23:20:44 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:20:58 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(28): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2730) Undefined variable: 'ADDR_WIDTH'.
+# End time: 23:20:58 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:22:10 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(57): Number of actuals and formals does not match in function call.
+# End time: 23:22:10 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:23:30 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(17): 'local::' may only be used within an inline constraint block.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): (vlog-2730) Undefined variable: 'MOST_BIT_POS'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): Illegal declaration after the statement near line '17'.  Declarations must precede statements.  Look for stray semicolons.
+# End time: 23:23:30 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:23:47 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(57): Number of actuals and formals does not match in function call.
+# End time: 23:23:47 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:24:03 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(18): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(19): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(43): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(57): Number of actuals and formals does not match in function call.
+# End time: 23:24:03 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 11, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:25:04 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(41): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(41): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(42): (vlog-2934) Argument for randomize() function must be a field of 'this'.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(56): Number of actuals and formals does not match in function call.
+# End time: 23:25:04 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 5, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:16 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# -- Compiling module test_bench
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(56): Number of actuals and formals does not match in function call.
+# End time: 23:26:16 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 23:26:34 on May 22,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
+# -- Compiling package addr_mapping_sv_unit
+# -- Compiling module test_bench
+# 
+# Top level modules:
+# 	test_bench
+# End time: 23:26:34 on May 22,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_sv_unit
+# Loading work.test_bench
+run
+# result hash is:                    0
+# ** Fatal: /home/ubuntu/workdir/corlice/addr_mapping.sv(41): Unable to check out verification license for randomize() feature.
+#    Time: 0 ps  Iteration: 0  Process: /test_bench/#INITIAL#63 File: /home/ubuntu/workdir/corlice/addr_mapping.sv
+# Fatal error in Function addr_mapping_sv_unit/CuckooHashMap::DefaultUniversalHashFunction::randomHashFunction at /home/ubuntu/workdir/corlice/addr_mapping.sv line 41
+# 
+# HDL call sequence:
+# Stopped at /home/ubuntu/workdir/corlice/addr_mapping.sv 41 Function addr_mapping_sv_unit/CuckooHashMap::DefaultUniversalHashFunction::randomHashFunction
+# called from  /home/ubuntu/workdir/corlice/addr_mapping.sv 67 Module test_bench
+# 
+# End time: 23:29:06 on May 22,2017, Elapsed time: 2:54:30
+# Errors: 273, Warnings: 10
