@@ -1,79 +1,41 @@
-// package addr_mapping;
-
 `define ADDR_WIDTH 64
-`define LG_NUM_BUCKETS 2
 
-class CuckooHashMap;
+typedef bit [`ADDR_WIDTH-1:0] addr_bits;
+
+module addr_maping(in, out);
+
+   input in;
+   output out;
    
-   class DefaultHashFunction;
-      local bit [`ADDR_WIDTH-1:0] coe_a, coe_b;
-
-      function new(int coe_a, coe_b);
-         this.coe_a = coe_a;
-         this.coe_b = coe_b;
-      endfunction
+   default_hash dh();
+   
+   task generate_hash_functions;
       
-      function bit [`ADDR_WIDTH-1:0] hash(int sva);
-         bit [`ADDR_WIDTH/2-1:0] upper = sva >> (`ADDR_WIDTH / 2);
-         bit [`ADDR_WIDTH/2-1:0] mask  = (1 << `ADDR_WIDTH / 2) - 1;
-         bit [`ADDR_WIDTH/2-1:0] lower = sva & mask;
+   endtask
 
-         return (upper * coe_a + lower * coe_b) >> (`ADDR_WIDTH - `LG_NUM_BUCKETS);
-      endfunction
-      
-      function bit [`ADDR_WIDTH-1:0] get_coe_a();
-         return coe_a;
-      endfunction
-
-      function bit [`ADDR_WIDTH-1:0] get_coe_b();
-         return coe_b;
-      endfunction
-
-   endclass
+endmodule
 
 
-   class DefaultUniversalHashFunction;
-      local bit [`ADDR_WIDTH-1:0] coe_a, coe_b;
+module default_hash ();
+   const int LG_NUM_BUCKETS = 2;   // 2^LG_NUM_BUCKETS is the number of buckets we're hashing into.
 
-      function DefaultHashFunction randomHashFunction();
-         DefaultHashFunction dhf;
-         
-         void'(randomize(coe_a));
-         void'(randomize(coe_b));
-         
-         dhf = new(coe_a, coe_b);
-         return dhf;
-      endfunction
+   addr_bits coe_a = {$urandom, $urandom};
+   addr_bits coe_b = {$urandom, $urandom};
 
-   endclass
-endclass
-
-module test_bench();
-   CuckooHashMap::DefaultHashFunction defaultHashFunction;
+   function addr_bits hash;
+      input addr_bits sva;
+      bit [`ADDR_WIDTH/2-1:0] upper, lower, mask;
    
-   initial
-   begin
-      defaultHashFunction = new(16'hfbcd, 16'hfbcd);
-      $display("result hash is: %d", defaultHashFunction.hash(32'haaaabbbb));
-   end
-   
-   CuckooHashMap::DefaultUniversalHashFunction defaultUniversalHashFunction;
-   
-   
-   initial
-   begin
-      defaultUniversalHashFunction = new();
+      upper = sva >> (`ADDR_WIDTH / 2);
+      mask = (1 << (`ADDR_WIDTH / 2)) - 1;
+      lower = sva & mask;
 
-      defaultHashFunction = defaultUniversalHashFunction.randomHashFunction();
-      $display("coe_a is %h", (defaultHashFunction.get_coe_a()));
-      $display("coe_b is %h", (defaultHashFunction.get_coe_b()));
-      
-      defaultHashFunction = defaultUniversalHashFunction.randomHashFunction();
-      $display("coe_a is %h", (defaultHashFunction.get_coe_a()));
-      $display("coe_b is %h", (defaultHashFunction.get_coe_b()));
-      
-      defaultHashFunction = defaultUniversalHashFunction.randomHashFunction();
-      $display("coe_a is %h", (defaultHashFunction.get_coe_a()));
-      $display("coe_b is %h", (defaultHashFunction.get_coe_b()));
-   end
+      hash = (upper * coe_a + lower * coe_b) >> (`ADDR_WIDTH - LG_NUM_BUCKETS);
+   endfunction
+   
+   task refresh;
+      coe_a = {$urandom, $urandom};
+      coe_b = {$urandom, $urandom};
+   endtask
+   
 endmodule

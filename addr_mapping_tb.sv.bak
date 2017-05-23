@@ -1,0 +1,15 @@
+module corlice_tb();
+   addr_width_t val;
+
+   default_hash #(.COE_A(32'h6f23ffab), .COE_B(32'h1f23ffab)) dh();
+   
+   initial
+   begin
+      val = dh.hash(`ADDR_WIDTH'h ffbbbbbbffbbbbbb);
+      
+      $display("sva is %h", dh.hash.sva);
+      $display("upper is %h", dh.hash.upper);
+      $display("lower is %h", dh.hash.lower);
+      $display("val is %d", val);
+   end
+endmodule

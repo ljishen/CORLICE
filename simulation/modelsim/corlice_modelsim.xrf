@@ -1,6 +1,6 @@
 vendor_name = ModelSim
+source_file = 1, /home/ubuntu/workdir/corlice/addr_mapping.sv
 source_file = 1, /home/ubuntu/workdir/corlice/corlice.v
-source_file = 1, /home/ubuntu/workdir/corlice/cuckoo_hash_map.v
 source_file = 1, /home/ubuntu/workdir/corlice/db/corlice.cbx.xml
 design_name = corlice
 instance = comp, \led[0]~output , led[0]~output, corlice, 1
