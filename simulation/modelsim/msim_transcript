@@ -10,1346 +10,140 @@
 # 
 # vlog -vlog01compat -work work +incdir+/home/ubuntu/workdir/corlice {/home/ubuntu/workdir/corlice/corlice.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:17 on May 23,2017
+# Start time: 08:19:38 on May 24,2017
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+/home/ubuntu/workdir/corlice" /home/ubuntu/workdir/corlice/corlice.v 
 # -- Compiling module corlice
-# -- Compiling module mux
 # 
 # Top level modules:
 # 	corlice
-# 	mux
-# End time: 00:55:17 on May 23,2017, Elapsed time: 0:00:00
+# End time: 08:19:38 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# 
+# stdin: <EOF>
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 00:55:29 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
+# Start time: 08:19:45 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
 # 
 # Top level modules:
-# 	test_bench
-# End time: 00:55:29 on May 23,2017, Elapsed time: 0:00:00
+# 	addr_mapping_tb
+# End time: 08:19:45 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-restart
-# No Design Loaded!
-run
-# No Design Loaded!
-vsim work.test_bench
-# vsim work.test_bench 
-# Start time: 00:55:50 on May 23,2017
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:19:46 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 08:19:46 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.addr_mapping_tb
+# vsim work.addr_mapping_tb 
+# Start time: 08:19:50 on May 24,2017
 # Loading sv_std.std
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
 run
-# result hash is:                    0
-# ** Fatal: /home/ubuntu/workdir/corlice/addr_mapping.sv(41): Unable to check out verification license for randomize() feature.
-#    Time: 0 ps  Iteration: 0  Process: /test_bench/#INITIAL#63 File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Fatal error in Function addr_mapping_sv_unit/CuckooHashMap::DefaultUniversalHashFunction::randomHashFunction at /home/ubuntu/workdir/corlice/addr_mapping.sv line 41
-# 
-# HDL call sequence:
-# Stopped at /home/ubuntu/workdir/corlice/addr_mapping.sv 41 Function addr_mapping_sv_unit/CuckooHashMap::DefaultUniversalHashFunction::randomHashFunction
-# called from  /home/ubuntu/workdir/corlice/addr_mapping.sv 67 Module test_bench
-# 
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 20
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# num_buckets is           4
+step
+step
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# lg_val is           2
+step -over
+# Next activity is in 1 ps.
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 20
+step
+restart
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:17:08 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
+# Start time: 08:24:31 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
 # 
 # Top level modules:
-# 	test_bench
-# End time: 01:17:08 on May 23,2017, Elapsed time: 0:00:00
+# 	addr_mapping_tb
+# End time: 08:24:31 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
 run
-# result hash is:                    0
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-runn
-# invalid command name "runn"
-run
-restart
-run
-# result hash is:                    0
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 20
+step -over
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:30:06 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
+# Start time: 08:25:41 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
 # 
 # Top level modules:
-# 	test_bench
-# End time: 01:30:06 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    1
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# result hash is:                    0
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# result hash is:                    0
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-# result hash is:                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:48:20 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(61): near "'h": syntax error, unexpected BASE, expecting ';'.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(63): near "'h": syntax error, unexpected BASE, expecting ')'.
-# End time: 01:48:20 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:55:59 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(7): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Field/method name (ADDR_WIDTH) not in 'this'
-# -- Compiling module test_bench
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(7): Unresolved reference to 'this' for non-static field 'ADDR_WIDTH'.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2889) Illegal to access non-static property 'ADDR_WIDTH' outside its class scope.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Field/method name (ADDR_WIDTH) not in 'this'
-# End time: 01:55:59 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 6, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 01:57:00 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(7): Range must be bounded by constant expressions.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
-# -- Compiling module test_bench
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(7): Range must be bounded by constant expressions.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
-# End time: 01:57:00 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:01:24 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:01:24 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    1
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# result hash is:                    0
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# result hash is:                    0
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-# result hash is:                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:05:41 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:05:41 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    1
-# result upper is:          0
-# result mask is: 4294967295
-# result lower is: 3149642683
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# result hash is:                    0
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# result hash is:                    0
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-# result hash is:                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:06:09 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:06:09 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    1
-# result upper is: 00000000
-# result mask is: ffffffff
-# result lower is: bbbbbbbb
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# result hash is:                    0
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# result hash is:                    0
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-# result hash is:                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:07:04 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:07:04 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# result upper is: aaaaaaaa
-# result mask is: ffffffff
-# result lower is: bbbbbbbb
-# coe_a is ffffffff8eb74a7c
-# coe_b is 000000003030ba1c
-# result hash is:                    3
-# coe_a is ffffffffc73523a7
-# coe_b is 00000000456ee1c4
-# result hash is:                    0
-# coe_a is 0000000003d23d59
-# coe_b is 0000000040c04bfb
-# result hash is:                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:14:49 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:14:49 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# coe_a is 4879f30003d23d59
-# coe_b is 58b64df840c04bfb
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:15:51 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:15:51 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:19:39 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:19:39 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restrt
-# invalid command name "restrt"
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# random is 8d3d0772
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# random is 8d3d0772
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:25:35 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(42): near "rand": syntax error, unexpected rand.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(45): Illegal declaration after the statement near line '42'.  Declarations must precede statements.  Look for stray semicolons.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(46): (vlog-2730) Undefined variable: 'coe_b'.
-# End time: 02:25:35 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:27:15 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:27:15 on May 23,2017, Elapsed time: 0:00:00
+# 	addr_mapping_tb
+# End time: 08:25:41 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart 
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 8eb74a7c4682679c
-# coe_b is 3030ba1c519afde8
-# result hash is:                    3
-# coe_a is c73523a761604716
-# coe_b is 456ee1c44879f300
-# result hash is:                    1
-# random is 8d3d0772
-restart
-run
-# result hash is:                    2
-# coe_a is 8eb74a7c4682679c
-# coe_b is 3030ba1c519afde8
-# result hash is:                    3
-# coe_a is c73523a761604716
-# coe_b is 456ee1c44879f300
-# result hash is:                    1
-# random is 8d3d0772
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:27:59 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:27:59 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 8eb74a7c4682679c
-# coe_b is 3030ba1c519afde8
-# result hash is:                    3
-# coe_a is c73523a761604716
-# coe_b is 456ee1c44879f300
-# result hash is:                    1
-# random is 8d3d0772
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:29:55 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 02:29:55 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# random is 8d3d0772
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# random is 8d3d0772
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# random is 8d3d0772
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:54:23 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(57): 'addr_width_t' is an unknown type.
-# Or did you omit the '()' for an instantiation?
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(61): 'sva' is not a variable
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(61): Illegal LHS of assignment.
-# ** Error (suppressible): (vlog-2997) /home/ubuntu/workdir/corlice/addr_mapping.sv(61): Cannot assign a packed type 'bit[63:0]' to an unpacked type 'interface addr_width_t'.
-# ** Error (suppressible): (vlog-13215) /home/ubuntu/workdir/corlice/addr_mapping.sv(64): Arg. 'sva' of 'hash':  Cannot assign an unpacked type 'interface addr_width_t' to a packed type 'bit[63:0]'.
-# ** Error (suppressible): (vlog-13215) /home/ubuntu/workdir/corlice/addr_mapping.sv(77): Arg. 'sva' of 'hash':  Cannot assign an unpacked type 'interface addr_width_t' to a packed type 'bit[63:0]'.
-# ** Error (suppressible): (vlog-13215) /home/ubuntu/workdir/corlice/addr_mapping.sv(82): Arg. 'sva' of 'hash':  Cannot assign an unpacked type 'interface addr_width_t' to a packed type 'bit[63:0]'.
-# End time: 03:54:23 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 7, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:56:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 03:56:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# random is 8d3d0772
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-restart
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# random is 8d3d0772
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:59:02 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(88): near "end": syntax error, unexpected end.
-# End time: 03:59:02 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 03:59:20 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(87): near ";": syntax error, unexpected ';', expecting ')' or ','.
-# End time: 03:59:20 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:00:02 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:00:02 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# random is 8d3d0772
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-# coe_a is 4879f30003d23d59
-# coe_b is 58b64df840c04bfb
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:05:48 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:05:48 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:06:36 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:06:36 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    2
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:07:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:07:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    0
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:07:40 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:07:40 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    3
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:08:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module test_bench
-# 
-# Top level modules:
-# 	test_bench
-# End time: 04:08:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_sv_unit
-# Loading work.test_bench
-run
-# result hash is:                    1
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:09:15 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(55): near "module": syntax error, unexpected module, expecting class.
-# End time: 04:09:15 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-# Load canceled
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:20:16 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package mapping
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(3): (vlog-2294) The 'var' keyword is missing.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(3): near "64": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
-# End time: 04:20:16 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:20:30 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(3): near "64": syntax error, unexpected INTEGER NUMBER, expecting ';' or ','.
-# End time: 04:20:30 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:20:45 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package mapping
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(20): near "/": syntax error, unexpected '/'.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(21): near "=": syntax error, unexpected '=', expecting '('.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(21): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(22): near "=": syntax error, unexpected '=', expecting '('.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(23): near "=": syntax error, unexpected '=', expecting '('.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(25): (vlog-2730) Undefined variable: 'upper'.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(25): (vlog-2730) Undefined variable: 'lower'.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(25): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:20:45 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 11, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:15 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package mapping
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(22): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(22): near "/": syntax error, unexpected '/'.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:21:15 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:21:28 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:21:28 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:26:41 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:26:41 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:26:52 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:26:52 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:26:53 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping.sv(53): near "EOF": syntax error, unexpected end of source code, expecting class.
-# End time: 04:26:53 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:29:07 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(7): Range must be bounded by constant expressions.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping.sv(20): Range must be bounded by constant expressions.
-# End time: 04:29:07 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:30:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# 
-# Top level modules:
-# 	--none--
-# End time: 04:30:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:31:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): (vlog-2164) Class or package 'CuckooHashMap' not found.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): near "::": syntax error, unexpected ::.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): (vlog-13205) Syntax error found in the scope following 'CuckooHashMap'. Is there a missing '::'?
-# End time: 04:31:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:33:36 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1): (vlog-13006) Could not find the package (addr_mapping).  Design read will continue, but expect a cascade of errors after this failure.  Furthermore if you experience a vopt-7 error immediately before this error then please check the package names or the library search paths on the command line.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-2164) Class or package 'CuckooHashMap' not found.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "::": syntax error, unexpected ::.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-13205) Syntax error found in the scope following 'CuckooHashMap'. Is there a missing '::'?
-# End time: 04:33:36 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 4, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:34:10 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# 
-# Top level modules:
-# 	--none--
-# End time: 04:34:10 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:34:12 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Importing package addr_mapping
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_mapping_tb
-# End time: 04:34:12 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:34:48 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping
-# 
-# Top level modules:
-# 	--none--
-# End time: 04:34:48 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:34:51 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-2164) Class or package 'CuckooHashMap' not found.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "::": syntax error, unexpected ::.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-13205) Syntax error found in the scope following 'CuckooHashMap'. Is there a missing '::'?
-# End time: 04:34:51 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 04:35:03 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Importing package addr_mapping
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_mapping_tb
-# End time: 04:35:03 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# ** Error: (vsim-3170) Could not find 'test_bench'.
-#         Searched libraries:
-#             /home/ubuntu/workdir/corlice/simulation/modelsim/rtl_work
-run
-# No Design Loaded!
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 00:55:50 on May 23,2017
-# Error loading design
-# End time: 04:35:41 on May 23,2017, Elapsed time: 3:39:51
-# Errors: 60, Warnings: 0
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 04:35:50 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-restart
-run
-# result hash is:                    1
-# coe_a is 12f837e78eb74a7c
-# coe_b is 4682679c3030ba1c
-# result hash is:                    3
-# coe_a is 519afde8c73523a7
-# coe_b is 61604716456ee1c4
-# result hash is:                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/corlice_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:21:10 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/corlice_tb.sv 
-# -- Compiling module corlice_tb
-# ** Error: /home/ubuntu/workdir/corlice/corlice_tb.sv(8): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# End time: 05:21:10 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:23:20 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# End time: 05:23:20 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:23:40 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): 'addr_width_t' is an unknown type.
-# Or did you omit the '()' for an instantiation?
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): 'val' is not a variable
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): Illegal LHS of assignment.
-# End time: 05:23:40 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:24:04 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): near "val": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:24:04 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:24:55 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): near "val": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:24:55 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:25:14 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(8): near ";": syntax error, unexpected ';', expecting '('.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:25:14 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:25:56 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "val": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:25:56 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:27:25 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "val": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:27:25 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:27:30 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:27:30 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:27:34 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "val": syntax error, unexpected IDENTIFIER, expecting ';' or ','.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2730) Undefined variable: 'val'.
-# End time: 05:27:34 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:14 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:28:14 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:30 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping.sv(3): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'".
-# ** Error: ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1): (vlog-13205) Syntax error found in the scope following '\\ '. Is there a missing '::'?
-# End time: 05:28:30 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:50 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping.sv(3): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'".
-# ** Error: ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1): (vlog-13205) Syntax error found in the scope following '\\ '. Is there a missing '::'?
-# End time: 05:28:50 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:54 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:28:54 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:56 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:28:56 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:28:57 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:28:57 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:29:00 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping.sv(3): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'".
-# ** Error: ** while parsing file included at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1)
-# ** at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(1): (vlog-13205) Syntax error found in the scope following '\\ '. Is there a missing '::'?
-# End time: 05:29:00 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:29:30 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(10): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# End time: 05:29:30 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:29:44 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:29:44 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:30:00 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:30:00 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:30:01 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:30:01 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:30:05 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:30:05 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:30:26 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 05:30:26 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.addr_mapping_tb
-# End time: 05:30:38 on May 23,2017, Elapsed time: 0:54:48
-# Errors: 25, Warnings: 0
-# vsim work.addr_mapping_tb 
-# Start time: 05:30:38 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is ffbbbbbbffbbbbbb
-# upper is ffbbbbbb
-# lower is ffbbbbbb
-# val is                    2
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:58:22 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:58:22 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:58:26 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(9): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error (suppressible): /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(9): (vlog-2244) Variable 'val' is implicitly static. You must either explicitly declare it as static or automatic
-# or remove the initialization in the declaration of variable.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(19): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(19): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# End time: 05:58:26 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:58:33 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping.sv 
-# -- Compiling package addr_mapping_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# 
-# Top level modules:
-# 	addr_maping
-# 	default_hash
-# End time: 05:58:33 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 05:58:40 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(2): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(9): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error (suppressible): /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(9): (vlog-2244) Variable 'val' is implicitly static. You must either explicitly declare it as static or automatic
-# or remove the initialization in the declaration of variable.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(19): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(19): (vlog-2163) Macro `ADDR_WIDTH is undefined.
-# End time: 05:58:40 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 5, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:02:27 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error (suppressible): /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(11): (vlog-2244) Variable 'val' is implicitly static. You must either explicitly declare it as static or automatic
-# or remove the initialization in the declaration of variable.
-# End time: 06:02:27 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:03:16 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): (vlog-2294) The 'var' keyword is missing.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(4): near "typedef": syntax error, unexpected "SystemVerilog keyword 'typedef'", expecting IDENTIFIER or TYPE_IDENTIFIER or NETTYPE_IDENTIFIER.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(11): near "=": syntax error, unexpected '=', expecting '('.
-# End time: 06:03:16 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 3, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:03:57 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error (suppressible): /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(11): (vlog-2244) Variable 'val' is implicitly static. You must either explicitly declare it as static or automatic
-# or remove the initialization in the declaration of variable.
-# End time: 06:03:57 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:04:49 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:04:49 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is ffbbbbbbffbbbbbb
-# upper is ffbbbbbb
-# lower is ffbbbbbb
-# val is                    2
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:06:07 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(25): (vlog-2730) Undefined variable: 'default_hash'.
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(25): near "#": syntax error, unexpected '#'.
-# End time: 06:06:07 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:08 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:08 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:44 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:44 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:47 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:47 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:47 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:47 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:48 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:48 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:07:51 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "dh": syntax error, unexpected IDENTIFIER, expecting ')' or ','.
-# End time: 06:07:51 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:08:10 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): 'dh' already declared in this scope.
-# End time: 06:08:10 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:11:43 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(27): near "defparam": syntax error, unexpected defparam.
-# End time: 06:11:44 on May 23,2017, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:12:27 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(28): Right-hand side of defparam must be constant.
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(29): Right-hand side of defparam must be constant.
-# End time: 06:12:27 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:33:11 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:33:11 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.addr_mapping_tb
-# End time: 06:33:21 on May 23,2017, Elapsed time: 1:02:43
-# Errors: 23, Warnings: 0
-# vsim work.addr_mapping_tb 
-# Start time: 06:33:21 on May 23,2017
-# Loading sv_std.std
 # Loading work.addr_mapping_tb_sv_unit
 # Loading work.addr_mapping_tb
 # Loading work.default_hash
@@ -1357,455 +151,453 @@ run
 # sva is aaaaaaaabbbbbbbb
 # upper is aaaaaaaa
 # lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
 # val is                    0
-add wave sim:/addr_mapping_tb/*
-restart
-run
+# num_buckets is           4
+# lg_val is           2
 # sva is aaaaaaaabbbbbbbb
 # upper is aaaaaaaa
 # lower is bbbbbbbb
-# val is                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:36:07 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:36:07 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): [CNNODP] - Component name (coe_a) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): Unresolved reference to 'coe_a' in dh.hash.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): [CNNODP] - Component name (coe_b) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): Unresolved reference to 'coe_b' in dh.hash.coe_b.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 06:33:21 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): [CNNODP] - Component name (coe_a) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): Unresolved reference to 'coe_a' in dh.hash.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): [CNNODP] - Component name (coe_b) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): Unresolved reference to 'coe_b' in dh.hash.coe_b.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Error loading design
-# End time: 06:36:33 on May 23,2017, Elapsed time: 0:03:12
-# Errors: 4, Warnings: 4
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 06:36:59 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): [CNNODP] - Component name (coe_a) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): Unresolved reference to 'coe_a' in dh.hash.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Warning: (vsim-3008) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): [CNNODP] - Component name (coe_b) is not on a downward path.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(17): Unresolved reference to 'coe_b' in dh.hash.coe_b.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Error loading design
-# End time: 06:36:59 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 2, Warnings: 2
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:37:07 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:37:07 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 06:37:11 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is xxxxxxxxxxxxxxxx
-# coe_b is xxxxxxxxxxxxxxxx
-# val is                    0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:49:40 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:49:40 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is 2951f3926f23ffab
-# coe_b is 111629ae6f23ffab
-# val is                    1
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:51:10 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:51:10 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:51:37 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(32): Right-hand side of defparam must be constant.
-# End time: 06:51:37 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 06:51:50 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 06:51:50 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:22:29 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:22:29 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:22:31 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:22:31 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:22:33 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:22:33 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:22:34 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:22:34 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Error: (vsim-3043) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(16): Unresolved reference to 'coe_a' in dh.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:23:19 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:23:19 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 06:37:11 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Error (suppressible): (vsim-10000) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(32): Unresolved defparam reference to 'coe_a' in dh.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Error loading design
-# End time: 07:23:26 on May 23,2017, Elapsed time: 0:46:15
-# Errors: 3, Warnings: 0
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 07:24:06 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Error (suppressible): (vsim-10000) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(32): Unresolved defparam reference to 'coe_a' in dh.coe_a.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Error loading design
-# End time: 07:24:07 on May 23,2017, Elapsed time: 0:00:01
-# Errors: 1, Warnings: 0
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:12 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:24:12 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-vsim work.addr_mapping_tb
-# vsim work.addr_mapping_tb 
-# Start time: 07:24:15 on May 23,2017
-# Loading sv_std.std
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(17): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb/dh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(17): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb/dh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(18): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb/dh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(18): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb/dh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(32): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Region: /addr_mapping_tb/dh/refresh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(32): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Region: /addr_mapping_tb/dh/refresh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(33): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Region: /addr_mapping_tb/dh/refresh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping.sv(33): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Region: /addr_mapping_tb/dh/refresh File: /home/ubuntu/workdir/corlice/addr_mapping.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(30): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(30): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:24:51 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:24:52 on May 23,2017, Elapsed time: 0:00:01
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(30): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# ** Warning: (vsim-PLI-3003) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(30): [TOFD] - System task or function '$uramdon' is not defined.
-#    Time: 0 ps  Iteration: 0  Instance: /addr_mapping_tb File: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:25:25 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:25:25 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is 15ff15866960f81e
-# coe_b is f64a95a28b99e06f
-# val is                    3
-restart
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is 15ff15866960f81e
-# coe_b is f64a95a28b99e06f
-# val is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:27:11 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:27:11 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is 15ff15866960f81e
-# coe_b is f64a95a28b99e06f
-# val is                    3
-vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
-# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:29:02 on May 23,2017
-# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
-# -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
-# -- Compiling module default_hash
-# -- Compiling module addr_mapping_tb
-# 
-# Top level modules:
-# 	addr_maping
-# 	addr_mapping_tb
-# End time: 07:29:02 on May 23,2017, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
-restart
-# Loading work.addr_mapping_tb_sv_unit
-# Loading work.addr_mapping_tb
-# Loading work.default_hash
-run
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
-# coe_a is 15ff15866960f81e
-# coe_b is f64a95a28b99e06f
-# val is                    3
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
+# lg_num_buckets is           2
 # coe_a is eb5aa3b817750c26
 # coe_b is 9d0db966bcb9e3b6
 # val is                    2
-# Load canceled
+# num_buckets is           8
+# lg_val is           3
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           6
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    6
+# num_buckets is          16
+# lg_val is           4
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 21
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 21
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# num_buckets is           4
+# lg_val is           2
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+# num_buckets is           8
+# lg_val is           3
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           6
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    6
+# num_buckets is          16
+# lg_val is           4
+run
+run
+trdysty
+# invalid command name "trdysty"
+restzrt
+# invalid command name "restzrt"
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 21
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# num_buckets is           4
+step -over
+step -over
+# lg_val is           2
+step
+# Next activity is in 1 ps.
+step -over
+step -over
+step -over
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+step -over
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# num_buckets is           8
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step
+# lg_val is           3
+step
+# Next activity is in 1 ps.
+step
+step
+step
+step
+step
+step
+step
+step
+step
+step -over
+step -over
+step -over
+# sva is aaaaaaaabbbbbbbb
+step -over
+# upper is aaaaaaaa
+step -over
+# lower is bbbbbbbb
+step -over
+# lg_num_buckets is           6
+step -over
+# coe_a is 510e08c683956e46
+step -over
+# coe_b is 3bd10f72769bf32e
+step -over
+# val is                    6
+step -over
+step -over
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 21
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# Break in Task update at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 21
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+step -over
+# num_buckets is           4
+step -over
+step -over
+# lg_val is           2
+step -over
+# Next activity is in 1 ps.
+step -over
+step -over
+step -over
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+restart
+run
+# Break in Task print at /home/ubuntu/workdir/corlice/addr_mapping_tb.sv line 40
+restrt
+# invalid command name "restrt"
+restart 
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           0
+# coe_a is 0000000000000000
+# coe_b is 0000000000000000
+# val is                    0
+# num_buckets is           4
+# lg_val is           2
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+# num_buckets is           8
+# lg_val is           3
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           6
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    6
+# num_buckets is          16
+# lg_val is           4
 vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 07:30:32 on May 23,2017
+# Start time: 08:34:41 on May 24,2017
 # vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
 # -- Compiling package addr_mapping_tb_sv_unit
-# -- Compiling module addr_maping
 # -- Compiling module default_hash
 # -- Compiling module addr_mapping_tb
 # 
 # Top level modules:
-# 	addr_maping
 # 	addr_mapping_tb
-# End time: 07:30:32 on May 23,2017, Elapsed time: 0:00:00
+# End time: 08:34:41 on May 24,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 restart
 # Loading work.addr_mapping_tb_sv_unit
 # Loading work.addr_mapping_tb
 # Loading work.default_hash
 run
+# num_buckets is           4
+# lg_val is           2
 # sva is aaaaaaaabbbbbbbb
 # upper is aaaaaaaa
 # lower is bbbbbbbb
-# coe_a is 15ff15866960f81e
-# coe_b is f64a95a28b99e06f
-# val is                    3
-# sva is aaaaaaaabbbbbbbb
-# upper is aaaaaaaa
-# lower is bbbbbbbb
+# lg_num_buckets is           2
 # coe_a is eb5aa3b817750c26
 # coe_b is 9d0db966bcb9e3b6
 # val is                    2
+# num_buckets is           8
+# lg_val is           3
 # sva is aaaaaaaabbbbbbbb
 # upper is aaaaaaaa
 # lower is bbbbbbbb
+# lg_num_buckets is           6
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    6
+# num_buckets is          16
+# lg_val is           4
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is          11
+# coe_a is fa3744673386553a
+# coe_b is 46f91c6a6b25d1b4
+# val is                  244
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:35:02 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 08:35:02 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+run
+# num_buckets is           4
+# lg_val is           2
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+# num_buckets is           8
+# lg_val is           3
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           6
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    6
+# num_buckets is          16
+# lg_val is           4
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is          11
+# coe_a is fa3744673386553a
+# coe_b is 46f91c6a6b25d1b4
+# val is                  244
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:36:29 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# ** Warning: /home/ubuntu/workdir/corlice/addr_mapping.sv(25): (vlog-2250) Function "put" has no return value assignment.
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_maping
+# 	addr_mapping_tb
+# End time: 08:36:29 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+run
+# num_buckets is           4
+# lg_val is           2
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+# num_buckets is           8
+# lg_val is           3
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           3
 # coe_a is 510e08c683956e46
 # coe_b is 3bd10f72769bf32e
 # val is                    0
+# num_buckets is          16
+# lg_val is           4
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           4
+# coe_a is fa3744673386553a
+# coe_b is 46f91c6a6b25d1b4
+# val is                    1
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:37:23 on May 24,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# ** Warning: /home/ubuntu/workdir/corlice/addr_mapping.sv(25): (vlog-2250) Function "put" has no return value assignment.
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_maping
+# 	addr_mapping_tb
+# End time: 08:37:23 on May 24,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           2
+# coe_a is eb5aa3b817750c26
+# coe_b is 9d0db966bcb9e3b6
+# val is                    2
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           3
+# coe_a is 510e08c683956e46
+# coe_b is 3bd10f72769bf32e
+# val is                    0
+# sva is aaaaaaaabbbbbbbb
+# upper is aaaaaaaa
+# lower is bbbbbbbb
+# lg_num_buckets is           4
+# coe_a is fa3744673386553a
+# coe_b is 46f91c6a6b25d1b4
+# val is                    1
