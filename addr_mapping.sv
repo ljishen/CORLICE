@@ -3,11 +3,8 @@
 
 typedef logic [`ADDR_WIDTH-1:0] addr_bits;
 
-module addr_maping(in, out);
+module addr_maping();
    parameter NUM_BUCKETS = 2 ** 27 - 1;
-
-   input in;
-   output out;
 
    logic [`ADDR_WIDTH-1:0] keys[`NUM_HASH_FUNC][NUM_BUCKETS];
    logic [`ADDR_WIDTH-1:0] values[`NUM_HASH_FUNC][NUM_BUCKETS];
@@ -28,28 +25,30 @@ module addr_maping(in, out);
    /* Adds a new sva/spa pair to the hash map. If the key already existed,
     * its old value is displaced and the new value is written in its stead.
     */
-   function addr_bits put(input addr_bits spa, sva);
+   function addr_bits put(input addr_bits sva, spa);
       addr_bits orig_spa;
       bit success;
 
       /* Check whether this value already exists. If so, just displace its
        * old value and hand it back.
        */
-      automatic int hash = dh[0].hash(sva);
-      if (keys[0][hash] == sva) begin
-         orig_spa = values[0][hash];
-         values[0][hash] = spa;
-         return orig_spa;
+      for (int i = 0; i < `NUM_HASH_FUNC; i = i + 1) begin
+         automatic int hash;
+         automatic bit func_index = i % 2;
+         
+         if (func_index == 0)
+            hash = dh[0].hash(sva);
+         else
+            hash = dh[1].hash(sva);
+            
+         if (keys[func_index][hash] == sva) begin
+            orig_spa = values[func_index][hash];
+            values[func_index][hash] = spa;
+            return orig_spa;
+         end
       end
 
-      hash = dh[1].hash(sva);
-      if (keys[1][hash] == sva) begin
-         orig_spa = values[1][hash];
-         values[1][hash] = spa;
-         return orig_spa;
-      end
-
-      success = try_insert(spa, sva);
+      success = try_insert(sva, spa);
       if (success == 1'b1)
          begin
             size = size + 1;
@@ -67,7 +66,7 @@ module addr_maping(in, out);
    /* Given an sva/spa pair, tries to insert that pair into the hash table, taking
     * several iterations if necessary. Output whether successful(1) or not(0) in bit.
     */
-   function bit try_insert(input addr_bits spa, sva);
+   function bit try_insert(input addr_bits sva, spa);
       /* Starting at the initial position, bounce back and forth between the
        * hash tables trying to insert the value.  During this process, keep
        * a counter that keeps growing until it reaches the a value above the
@@ -95,9 +94,8 @@ module addr_maping(in, out);
          values[func_index][hash] = spa;
 
          /* If the orginal value is unknown, the slot is open and we are done. */
-         if ($isunknown(value)) begin
+         if ($isunknown(value))
             return 1'b1;
-         end
 
          /* Otherwise try inserting the bumped element into the other array. */
          sva = key;
@@ -131,6 +129,7 @@ module addr_maping(in, out);
    endfunction
 
 
+   /* Deletes the specified sva/spa pair from the map, if it exists. */
    function bit remove(input addr_bits sva);
       for (int i = 0; i < `NUM_HASH_FUNC; i = i + 1) begin
          automatic int hash;
@@ -144,6 +143,8 @@ module addr_maping(in, out);
          if (sva == keys[func_index][hash]) begin
             keys[func_index][hash] = 1'bx;
             values[func_index][hash] = 1'bx;
+
+            size = size - 1;
             return 1'b1;
          end
       end
@@ -156,10 +157,10 @@ endmodule
 
 module default_hash ();
    int lg_num_buckets;
-   addr_bits coe_a, coe_b;
+   bit [`ADDR_WIDTH/2-1:0] coe_a, coe_b;
 
    function int hash(input addr_bits sva);
-      bit [`ADDR_WIDTH/2-1:0] upper, lower, mask;
+      addr_bits upper, lower, mask;
    
       upper = sva >> (`ADDR_WIDTH / 2);
       mask = (1 << (`ADDR_WIDTH / 2)) - 1;
@@ -176,7 +177,7 @@ module default_hash ();
       end
       lg_num_buckets = lg_val;
 
-      coe_a = {$urandom, $urandom};
-      coe_b = {$urandom, $urandom};
+      coe_a = $urandom;
+      coe_b = $urandom;
    endtask
 endmodule
