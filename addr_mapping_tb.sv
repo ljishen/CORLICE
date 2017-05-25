@@ -2,11 +2,9 @@
 
 module addr_mapping_tb();
 
-   addr_bits val;
-
    task print;
       begin
-         val = dh.hash(`ADDR_WIDTH'h aaaaaaaabbbbbbbb);
+         automatic addr_bits val = dh.hash(`ADDR_WIDTH'h aaaaaaaabbbbbbbb);
 
          $display("sva is %h", dh.hash.sva);
          $display("upper is %h", dh.hash.upper);
@@ -20,21 +18,18 @@ module addr_mapping_tb();
 
    default_hash dh();
    
-   int num_buckets;
-   always @(num_buckets) begin
-      dh.update(num_buckets);
-   end
+   logic [10:0] keys[`NUM_HASH_FUNC][4];
 
-   initial
-   begin
-      num_buckets = 4; #1
+   initial begin
+      dh.update(2 ** 10 - 1);
       print();
       
-      num_buckets = 8; #1
-      print();    #1
-      
-      num_buckets = 16; #1
-      print();
+      $display("check default value: %b", keys[0][0]);
+      keys[0][0] = 1'bx;
+      if ($isunknown(keys[0][0]))
+         $display("yes");
+      else
+         $display("no");
    end
 
 endmodule
