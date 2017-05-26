@@ -75,7 +75,7 @@ module addr_maping();
        * We also use num_tries as an odd/even counter so we know which hash
        * table we're inserting into.
        */
-      for (int num_tries = 0; num_tries <= size; num_tries = num_tries + 1) begin
+      for (int num_tries = 0; num_tries < size + 2; num_tries = num_tries + 1) begin
          /* Compute the hash code and see what's at that position. */
          automatic int hash;
          automatic addr_bits key, value;
@@ -104,6 +104,7 @@ module addr_maping();
 
       return 1'b0;
    endfunction
+
 
    /* Returns the spa associated with the given sva.  If the sva is not a
     * key in the map, the output spa should remain in unknown state as a sentinel.

@@ -10,13 +10,847 @@
 # 
 # vlog -sv -work work +incdir+/home/ubuntu/workdir/corlice {/home/ubuntu/workdir/corlice/corlice.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 02:10:29 on May 25,2017
+# Start time: 20:03:05 on May 25,2017
 # vlog -reportprogress 300 -sv -work work "+incdir+/home/ubuntu/workdir/corlice" /home/ubuntu/workdir/corlice/corlice.v 
 # -- Compiling module corlice
 # 
 # Top level modules:
 # 	corlice
-# End time: 02:10:29 on May 25,2017, Elapsed time: 0:00:00
+# End time: 20:03:05 on May 25,2017, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-quit
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:03:20 on May 25,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:03:20 on May 25,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# No Design Loaded!
+
+vsim work.addr_mapping_tb
+# vsim work.addr_mapping_tb 
+# Start time: 20:03:30 on May 25,2017
+# Loading sv_std.std
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+restart
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           4
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# =============================
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          14
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# =============================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# =============================
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# DEBUG==============================DEBUG
+# table 0 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          10 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          10 - Key aaaaaaaabbbbbbbb
+# table 0 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          14 - Key aaaaaaaabccccccc
+# table 1 - Position          14 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          20 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          20 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          28 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          28 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          30 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          30 - Key xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:29:10 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 19:29:11 on May 26,2017, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# =============ARGUMENTS================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           4
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ==============FIRST PUT===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          14
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# =============VALUE OVERWRITE WITH SAME KEY================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ==============BUMPED OUT===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ==============RECURSIVE BUMPED OUT===============
+# ===============DEBUG=================
+# table 0 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          10 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          10 - Key aaaaaaaabbbbbbbb
+# table 0 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          14 - Key aaaaaaaabccccccc
+# table 1 - Position          14 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          20 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          20 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          28 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          28 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          30 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          30 - Key xxxxxxxxxxxxxxxx
+
+restart
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:50:48 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 19:50:48 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           5
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          28
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 0 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           0 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           1 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           2 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           3 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           4 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           5 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           6 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           7 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           8 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position           9 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          10 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          10 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          11 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          12 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          13 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          14 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          14 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          15 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          16 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          17 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          18 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          19 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          20 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          20 - Key aaaaaaaabbbbbbbb
+# table 0 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          21 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          22 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          23 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          24 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          25 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          26 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          27 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          28 - Key aaaaaaaabccccccc
+# table 1 - Position          28 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          29 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          30 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          30 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          31 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          31 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          32 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          32 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          33 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          33 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          34 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          34 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          35 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          35 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          36 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          36 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          37 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          37 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          38 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          38 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          39 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          39 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          40 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          40 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          41 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          41 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          42 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          42 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          43 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          43 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          44 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          44 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          45 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          45 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          46 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          46 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          47 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          47 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          48 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          48 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          49 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          49 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          50 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          50 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          51 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          51 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          52 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          52 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          53 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          53 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          54 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          54 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          55 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          55 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          56 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          56 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          57 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          57 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          58 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          58 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          59 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          59 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          60 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          60 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          61 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          61 - Key xxxxxxxxxxxxxxxx
+# table 0 - Position          62 - Key xxxxxxxxxxxxxxxx
+# table 1 - Position          62 - Key xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:00:45 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:00:45 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           5
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          28
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 0 - Position          28 - Key aaaaaaaabccccccc
+# table 1 - Position          28 - Key xxxxxxxxxxxxxxxx
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:02:22 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:02:22 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           5
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          28
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 0 - Position          28 - [aaaaaaaabccccccc : 1111111144444444]
+# table 1 - Position          28 - [xxxxxxxxxxxxxxxx : xxxxxxxxxxxxxxxx]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:02:50 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:02:50 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           5
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          28
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 0 - Position          28 - [aaaaaaaabccccccc : 1111111144444444]
+# table 1 - Position          28 - [xxxxxxxxxxxxxxxx : xxxxxxxxxxxxxxxx]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:05:57 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(71): near "genvar": syntax error, unexpected genvar.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(73): (vlog-2730) Undefined variable: 'table_index'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(73): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(78): near "endgenerate": syntax error, unexpected endgenerate.
+# End time: 20:05:57 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:06:36 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(71): near "genvar": syntax error, unexpected genvar.
+# ** Error: /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(73): (vlog-2730) Undefined variable: 'table_index'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(73): near ")": syntax error, unexpected ')', expecting ';'.
+# ** Error: (vlog-13069) /home/ubuntu/workdir/corlice/addr_mapping_tb.sv(78): near "endgenerate": syntax error, unexpected endgenerate.
+# End time: 20:06:37 on May 26,2017, Elapsed time: 0:00:01
+# Errors: 4, Warnings: 0
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:09:47 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:09:47 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           5
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is          28
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 1 - Position          20 - [aaaaaaaabbbbbbbb : 1111111133333333]
+# table 0 - Position          28 - [aaaaaaaabccccccc : 1111111144444444]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:10:31 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:10:31 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           9
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is         458
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabccccccc : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabccccccc returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# =============== DEBUG =================
+# table 0 - Position         458 - [aaaaaaaabbbbbbbb : 1111111133333333]
+# table 0 - Position         460 - [aaaaaaaabccccccc : 1111111144444444]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:41:02 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:41:02 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           9
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is         458
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabbbcbbbb : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# Put pair (a7f2aaaabd3c4657 : 1111111155555555) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# Get key a7f2aaaabd3c4657 returns 1111111155555555
+# =============== DEBUG =================
+# table 1 - Position         333 - [a7f2aaaabd3c4657 : 1111111155555555]
+# table 1 - Position         334 - [aaaaaaaabbbcbbbb : 1111111144444444]
+# table 0 - Position         458 - [aaaaaaaabbbbbbbb : 1111111133333333]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:41:49 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:41:49 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           9
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is         458
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabbbcbbbb : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# Put pair (a7f2aaaabd3c4657 : 1111111155555555) returns 000000000000000Z
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# Get key a7f2aaaabd3c4657 returns xxxxxxxxxxxxxxxx
+# =============== DEBUG =================
+# table 1 - Position         334 - [aaaaaaaabbbcbbbb : 1111111144444444]
+# table 0 - Position         458 - [aaaaaaaabbbbbbbb : 1111111133333333]
+vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 20:45:41 on May 26,2017
+# vlog -reportprogress 300 -work work /home/ubuntu/workdir/corlice/addr_mapping_tb.sv 
+# -- Compiling package addr_mapping_tb_sv_unit
+# -- Compiling module addr_maping
+# -- Compiling module default_hash
+# -- Compiling module addr_mapping_tb
+# 
+# Top level modules:
+# 	addr_mapping_tb
+# End time: 20:45:41 on May 26,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+restart
+# Loading work.addr_mapping_tb_sv_unit
+# Loading work.addr_mapping_tb
+# Loading work.default_hash
+# Loading work.addr_maping
+run
+# sva is aaaaaaaabbbbbbbb
+# upper is 00000000aaaaaaaa
+# lower is 00000000bbbbbbbb
+# lg_num_buckets is           9
+# coe_a is eb5aa3b8
+# coe_b is 17750c26
+# val is                  348
+# ============= ARGUMENTS ================
+# Get non-exist key: xxxxxxxxxxxxxxxx
+# Remove non-exist key: 0
+# lg_num_buckets is           9
+# dh[0] coe_a is 2084471396
+# dh[0] coe_b is 3354927031
+# dh[1] coe_a is 2069410293
+# dh[1] coe_b is 1943619570
+# ============== FIRST PUT ===============
+# Put pair (aaaaaaaabbbbbbbb : 1111111122222222) returns xxxxxxxxxxxxxxxx
+# Hash of the key is         458
+# Now size is           1
+# Get key aaaaaaaabbbbbbbb returns 1111111122222222
+# ============= VALUE OVERWRITE WITH SAME KEY ================
+# Put pair (aaaaaaaabbbbbbbb : 1111111133333333) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# ============== BUMPED OUT ===============
+# Put pair (aaaaaaaabbbcbbbb : 1111111144444444) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# ============== RECURSIVE BUMPED OUT ===============
+# Put pair (a7f2aaaabd3c4657 : 1111111155555555) returns 1111111122222222
+# Get key aaaaaaaabbbbbbbb returns 1111111133333333
+# Get key aaaaaaaabbbcbbbb returns 1111111144444444
+# Get key a7f2aaaabd3c4657 returns 1111111155555555
+# =============== DEBUG =================
+# table 1 - Position         333 - [a7f2aaaabd3c4657 : 1111111155555555]
+# table 1 - Position         334 - [aaaaaaaabbbcbbbb : 1111111144444444]
+# table 0 - Position         458 - [aaaaaaaabbbbbbbb : 1111111133333333]
