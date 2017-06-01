@@ -42,13 +42,12 @@ module soc_system_nios2_gen2_0_cpu_mult_cell (
   input            clk;
   input            reset_n;
 
-
-wire    [ 31: 0] M_mul_cell_p1;
-wire    [ 31: 0] M_mul_cell_p2;
-wire    [ 31: 0] M_mul_cell_p3;
-wire             mul_clr;
-wire    [ 31: 0] mul_src1;
-wire    [ 31: 0] mul_src2;
+  wire    [ 31: 0] M_mul_cell_p1;
+  wire    [ 31: 0] M_mul_cell_p2;
+  wire    [ 31: 0] M_mul_cell_p3;
+  wire             mul_clr;
+  wire    [ 31: 0] mul_src1;
+  wire    [ 31: 0] mul_src2;
   assign mul_clr = ~reset_n;
   assign mul_src1 = E_src1;
   assign mul_src2 = E_src2;
