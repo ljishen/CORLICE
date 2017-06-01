@@ -22,11 +22,8 @@ void start_mapping_listener(alt_u32 BaseAddr, alt_u32 ByteLen) {
     szData[3] = 0x3CCEEEE1;
     szData[4] = 0x123321AA;
 
-    printf("12aa");
     memcpy(pSrc, szData, sizeof(szData));
     alt_dcache_flush_all();
-
-    printf("123123");
 
     my_data *pDes;
     pDes = (my_data *)BaseAddr;

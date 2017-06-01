@@ -2,8 +2,8 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 1, 2017 10:51:30 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1496357490915</BspGeneratedUnixTimeStamp>
+        <BspGeneratedTimeStamp>Jun 1, 2017 10:59:50 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1496357990460</BspGeneratedUnixTimeStamp>
         <BspGeneratedLocation>/home/ubuntu/workdir/Corlice/software/slice_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../soc_system.sopcinfo</SopcDesignFile>
