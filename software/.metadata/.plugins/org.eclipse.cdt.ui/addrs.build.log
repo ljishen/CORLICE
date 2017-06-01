@@ -1,0 +1,9 @@
+09:17:47 **** Incremental Build of configuration Nios II for project addrs ****
+make all 
+Info: Building ../addrs_bsp/
+make --no-print-directory -C ../addrs_bsp/
+[BSP build complete]
+[addrs build complete]
+
+09:17:47 Build Finished (took 144ms)
+

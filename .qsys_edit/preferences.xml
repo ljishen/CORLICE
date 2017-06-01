@@ -3,14 +3,13 @@
  <debug showDebugMenu="0" />
  <systemtable filter="All Interfaces">
   <columns>
-   <connections preferredWidth="271" />
-   <irq preferredWidth="34" />
-   <name preferredWidth="206" />
-   <export preferredWidth="270" />
+   <connections preferredWidth="255" />
+   <irq preferredWidth="63" />
+   <name preferredWidth="338" />
   </columns>
  </systemtable>
- <library expandedCategories="Project,Library" />
- <window width="1926" height="1052" x="-3" y="31" />
- <generation block_symbol_file="0" />
+ <library
+   expandedCategories="Library/Basic Functions/Configuration and Programming,Library/Basic Functions/On Chip Memory,Library/University Program/Memory,Library/University Program,Library/Memory Interfaces and Controllers,Library/Memory Interfaces and Controllers/Flash,Library/Basic Functions,Library,Project" />
+ <window width="1616" height="876" x="113" y="62" />
  <hdlexample language="VERILOG" />
 </preferences>
