@@ -1,9 +1,0 @@
-09:12:04 **** Incremental Build of configuration Nios II for project metadata ****
-make all 
-Info: Building ../metadata_bsp/
-make --no-print-directory -C ../metadata_bsp/
-[BSP build complete]
-[metadata build complete]
-
-09:12:04 Build Finished (took 145ms)
-

@@ -1,5 +1,5 @@
 Assembler report for Corlice
-Thu Jun  1 08:08:20 2017
+Thu Jun  1 21:29:04 2017
 Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
 
 
@@ -39,7 +39,7 @@ agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Thu Jun  1 08:08:20 2017 ;
+; Assembler Status      ; Successful - Thu Jun  1 21:29:04 2017 ;
 ; Revision Name         ; Corlice                               ;
 ; Top-level Entity Name ; Corlice                               ;
 ; Family                ; Cyclone V                             ;
@@ -80,8 +80,8 @@ agreement for further details.
 ; Option         ; Setting                           ;
 +----------------+-----------------------------------+
 ; Device         ; 5CSEBA6U23I7                      ;
-; JTAG usercode  ; 0x03E409A9                        ;
-; Checksum       ; 0x03E409A9                        ;
+; JTAG usercode  ; 0x03E3D717                        ;
+; Checksum       ; 0x03E3D717                        ;
 +----------------+-----------------------------------+
 
 
@@ -91,7 +91,7 @@ agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
-    Info: Processing started: Thu Jun  1 08:08:03 2017
+    Info: Processing started: Thu Jun  1 21:28:47 2017
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off Corlice -c Corlice
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115030): Assembler is generating device programming files
@@ -100,8 +100,8 @@ Warning (210042): Can't convert time-limited SOF into POF, HEX File, TTF, or RBF
 Info (210040): SRAM Object File /home/ubuntu/workdir/Corlice/output_files/Corlice_time_limited.sof contains time-limited megafunction that supports OpenCore Plus feature -- Vendor: 0x6AF7, Product: 0x00A2
 Info (11878): Hard Processor Subsystem configuration has not changed and a Preloader software update is not required
 Info: Quartus Prime Assembler was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 1081 megabytes
-    Info: Processing ended: Thu Jun  1 08:08:20 2017
+    Info: Peak virtual memory: 1087 megabytes
+    Info: Processing ended: Thu Jun  1 21:29:04 2017
     Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:17
 

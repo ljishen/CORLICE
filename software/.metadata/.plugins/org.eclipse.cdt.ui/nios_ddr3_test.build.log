@@ -1,9 +1,0 @@
-09:00:16 **** Incremental Build of configuration Nios II for project nios_ddr3_test ****
-make all 
-Info: Building ../nios_ddr3_test_bsp/
-make --no-print-directory -C ../nios_ddr3_test_bsp/
-[BSP build complete]
-[nios_ddr3_test build complete]
-
-09:00:17 Build Finished (took 135ms)
-

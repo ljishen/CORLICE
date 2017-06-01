@@ -8,8 +8,7 @@
    <name preferredWidth="338" />
   </columns>
  </systemtable>
- <library
-   expandedCategories="Library/Basic Functions/Configuration and Programming,Library/Basic Functions/On Chip Memory,Library/University Program/Memory,Library/University Program,Library/Memory Interfaces and Controllers,Library/Memory Interfaces and Controllers/Flash,Library/Basic Functions,Library,Project" />
+ <library expandedCategories="Project,Library" />
  <window width="1616" height="876" x="113" y="62" />
  <hdlexample language="VERILOG" />
 </preferences>
