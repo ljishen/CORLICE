@@ -1,14 +1,20 @@
 #include <arpa/inet.h>
+#include <inttypes.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include <unistd.h>
 
 #define PORT 5555
 #define RING_SIZE 512
 #define INIT_ADDR 0x20000000
 
+#define COUNT_MEASURE_INTERVAL 512 // match the message sent by client
+
 uint32_t g_current_addr = INIT_ADDR;
+struct timespec g_start, g_end;
+int g_measure_curr_count = 0;
 
 int check_addr_available(uint32_t addr) {
   char command[33];
@@ -50,6 +56,17 @@ void write_mem(uint32_t val) {
     exit(EXIT_FAILURE);
   }
 
+  g_measure_curr_count++;
+  if (g_measure_curr_count % COUNT_MEASURE_INTERVAL == 0) {
+    clock_gettime(CLOCK_MONOTONIC_RAW, &g_end);
+    uint64_t delta_us = (g_end.tv_sec - g_start.tv_sec) * 1000000 +
+                        (g_end.tv_nsec - g_start.tv_nsec) / 1000;
+    printf("Handle %d addresses used %" PRIu64 " milliseconds.\n\n",
+           COUNT_MEASURE_INTERVAL, delta_us);
+
+    clock_gettime(CLOCK_MONOTONIC_RAW, &g_start);
+  }
+
   g_current_addr += sizeof(val);
   if (g_current_addr >= INIT_ADDR + RING_SIZE * sizeof(val)) {
     g_current_addr = INIT_ADDR;
@@ -59,6 +76,10 @@ void write_mem(uint32_t val) {
 int read_from_client(int filedes) {
   int32_t ret;
   int nbytes;
+
+  if (g_measure_curr_count == 0) {
+    clock_gettime(CLOCK_MONOTONIC_RAW, &g_start);
+  }
 
   nbytes = read(filedes, &ret, sizeof(ret));
   if (nbytes < 0) {
