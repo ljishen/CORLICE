@@ -7,10 +7,10 @@
 #include <unistd.h>
 
 #define PORT 5555
-#define RING_SIZE 512
+#define RING_SIZE 1024
 #define INIT_ADDR 0x20000000
 
-#define COUNT_MEASURE_INTERVAL 512 // match the message sent by client
+#define COUNT_MEASURE_INTERVAL (1024 * 5) // match the message sent by client
 
 uint32_t g_current_addr = INIT_ADDR;
 struct timespec g_start, g_end;
@@ -61,7 +61,7 @@ void write_mem(uint32_t val) {
     clock_gettime(CLOCK_MONOTONIC_RAW, &g_end);
     uint64_t delta_us = (g_end.tv_sec - g_start.tv_sec) * 1000000 +
                         (g_end.tv_nsec - g_start.tv_nsec) / 1000;
-    printf("Handle %d addresses used %" PRIu64 " milliseconds.\n\n",
+    printf("\nHandle %d addresses used %" PRIu64 " milliseconds.\n\n",
            COUNT_MEASURE_INTERVAL, delta_us);
 
     clock_gettime(CLOCK_MONOTONIC_RAW, &g_start);

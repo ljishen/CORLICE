@@ -10,52 +10,51 @@
 #include <stdio.h>
 #include <math.h>
 
-#define DEBUG    FALSE
+#define DEBUG     FALSE
+#define RESET_VAL 0
 
-typedef alt_u32 item;
-const int kItemSize = sizeof(item);
+const int kItemSize = sizeof(alt_u32);
+
+void debug_print(alt_u32 *pSrc, alt_u32 *pStart) {
+    if (DEBUG) {
+        printf("Flushed %d bytes from %08X to %08X\n", (pSrc - pStart) * kItemSize, pStart, pSrc - 1);
+    }
+}
 
 void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
-    const int kResetValue = 0;
     const int kRingSize = pow(2, 10);
-    const int kCacheSize = pow(2, 8);
-    const item *kEdgeAddr = (item *)baseAddr + kRingSize;
+    const int kCacheSize = pow(2, 5);
+    const alt_u32 *kEndAddr = (alt_u32 *)baseAddr + kRingSize;
 
-    item *pSrc = (item *)baseAddr;
+    alt_u32 *pSrc = (alt_u32 *)baseAddr;
     while (TRUE) {
         int fetchSize = kCacheSize;
-        if (pSrc + fetchSize > kEdgeAddr) {
-            fetchSize = kEdgeAddr - pSrc;
+        if (pSrc + fetchSize > kEndAddr) {
+            fetchSize = kEndAddr - pSrc;
         }
         alt_dcache_flush(pSrc, fetchSize * kItemSize);
 
-        item *pStart = pSrc;
+        alt_u32 *pStart = pSrc;
         while (pSrc < pStart + fetchSize) {
-            if (*pSrc == kResetValue) {
+            if (*pSrc == RESET_VAL) {
                 if (pSrc != pStart) {
                     alt_dcache_flush(pStart, (pSrc - pStart) * kItemSize);
-                    debug(pSrc, pStart);
+                    debug_print(pSrc, pStart);
                 }
                 break;
             }
 
-            *pSrc = kResetValue;
+            *pSrc = RESET_VAL;
             pSrc++;
         }
 
         if (pSrc >= pStart + fetchSize) {
             alt_dcache_flush(pStart, fetchSize * kItemSize);
-            debug(pSrc, pStart);
+            debug_print(pSrc, pStart);
         }
 
-        if (pSrc >= kEdgeAddr) {
-            pSrc = (item *)baseAddr;
+        if (pSrc >= kEndAddr) {
+            pSrc = (alt_u32 *)baseAddr;
         }
-    }
-}
-
-void debug(item *pSrc, item *pStart) {
-    if (DEBUG) {
-        printf("Flushed %d bytes from %08Xh to %08Xh\n", (pSrc - pStart) * kItemSize, pStart, pSrc - 1);
     }
 }

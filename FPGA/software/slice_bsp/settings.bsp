@@ -2,9 +2,9 @@
 <sch:Settings xmlns:sch="http://www.altera.com/embeddedsw/bsp/schema">
         <BspType>hal</BspType>
         <BspVersion>default</BspVersion>
-        <BspGeneratedTimeStamp>Jun 1, 2017 10:59:50 PM</BspGeneratedTimeStamp>
-        <BspGeneratedUnixTimeStamp>1496357990460</BspGeneratedUnixTimeStamp>
-        <BspGeneratedLocation>/home/ubuntu/workdir/Corlice/software/slice_bsp</BspGeneratedLocation>
+        <BspGeneratedTimeStamp>Jun 3, 2017 7:18:54 PM</BspGeneratedTimeStamp>
+        <BspGeneratedUnixTimeStamp>1496517534627</BspGeneratedUnixTimeStamp>
+        <BspGeneratedLocation>/home/ubuntu/workdir/Corlice/FPGA/software/slice_bsp</BspGeneratedLocation>
         <BspSettingsFile>settings.bsp</BspSettingsFile>
         <SopcDesignFile>../../soc_system.sopcinfo</SopcDesignFile>
         <JdiFile>default</JdiFile>
