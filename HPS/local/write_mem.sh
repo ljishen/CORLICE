@@ -11,7 +11,7 @@ for r in {1..5}; do
     val=${INIT_VAL}
     for i in {0..1023}; do
         while true; do
-	    origVal=`./memtool -32 ${val} 1`
+            origVal=`./memtool -32 ${val} 1`
             if [[ ${origVal} == *"  00000000"* ]]; then
                  ./memtool -32 `echo ${val}`=0xaabbcc > /dev/null
                  val=`printf '0x%x\n' $((val+4))`
