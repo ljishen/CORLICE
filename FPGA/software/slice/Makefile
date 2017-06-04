@@ -144,6 +144,8 @@ ELF := slice.elf
 # Paths to C, C++, and assembly source files.
 C_SRCS += main.c
 C_SRCS += addr_mapping.c
+C_SRCS += kroki_cuckoo/cuckoo_hash.c
+C_SRCS += kroki_cuckoo/lookup3.c
 CXX_SRCS :=
 ASM_SRCS :=
 

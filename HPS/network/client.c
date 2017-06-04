@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include <unistd.h>
 
 #define PORT 5555
@@ -10,14 +11,15 @@
 
 void write_to_server(int filedes) {
   int count = 0;
+  time_t t;
 
   while (count < NUM_ADDRS_GEN) {
-    uint32_t val = rand() & 0xff;
-    val |= (rand() & 0xff) << 8;
-    val |= (rand() & 0xff) << 16;
-    val |= (rand() & 0xff) << 24;
+    if (count % 200 == 0) {
+      /* Re-intializes random number generator */
+      srand((unsigned)time(&t));
+    }
 
-    uint32_t snt = htonl(val);
+    uint32_t snt = htonl(rand());
 
     int nbytes = write(filedes, &snt, sizeof(snt));
     if (nbytes < 0) {
