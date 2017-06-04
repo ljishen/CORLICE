@@ -8,12 +8,15 @@
 #include "addr_mapping.h"
 #include "kroki_cuckoo/cuckoo_hash.h"
 
-#include <stdio.h>
 #include <math.h>
+#include <stdio.h>
 #include <stdlib.h>
 
-#define DEBUG     FALSE
+#define DEBUG FALSE
 #define RESET_VAL 0
+
+/* initial hash table size, which is (bin_size << power) */
+#define HASH_TABLE_POWER 7
 
 const int kItemSize = sizeof(alt_u32);
 
@@ -25,12 +28,12 @@ void debug_flush(alt_u32 *pSrc, alt_u32 *pStart) {
 }
 
 void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
-    const int kRingSize = pow(2, 10);
-    const int kCacheSize = pow(2, 7);
+    const int kRingSize = pow(2, 9);
+    const int kCacheSize = pow(2, 6);
     const alt_u32 *kEndAddr = (alt_u32 *) baseAddr + kRingSize;
 
     struct cuckoo_hash hash_table;
-    if (!cuckoo_hash_init(&hash_table, log2(kRingSize))) {
+    if (!cuckoo_hash_init(&hash_table, HASH_TABLE_POWER)) {
         fprintf(stderr,
                 "### System Halted: fail to initialize Cuckoo Hash Table ###\n");
         exit(EXIT_FAILURE);
@@ -61,10 +64,27 @@ void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
             if (CUCKOO_HASH_FAILED
                     == cuckoo_hash_insert(&hash_table, pSrc, kItemSize, pSrc)) {
                 fprintf(stderr,
-                        "\n\n### System Halted: Fail to insert 0x%08X=0x%08X into table (%d elements in the table) ###\n",
+                        "\n\n### Fail to insert 0x%08X=0x%08X "
+                                "into table (%d elements in the table) ###\n\n",
                         (unsigned int) *pSrc, (unsigned int) *pSrc,
                         cuckoo_hash_count(&hash_table));
-                exit(EXIT_FAILURE);
+                cuckoo_hash_destroy(&hash_table);
+
+                // FIXME: Because of the onchip memory is too small in the current
+                // hardware design.
+                if (!cuckoo_hash_init(&hash_table, HASH_TABLE_POWER)
+                        ||
+                        CUCKOO_HASH_FAILED
+                                == cuckoo_hash_insert(&hash_table, pSrc,
+                                        kItemSize, pSrc)) {
+                    fprintf(stderr,
+                            "\n\n### System Halted: Fail to insert 0x%08X=0x%08X "
+                                    "into table (%d elements in the table) ###\n",
+                            (unsigned int) *pSrc, (unsigned int) *pSrc,
+                            cuckoo_hash_count(&hash_table));
+                    cuckoo_hash_destroy(&hash_table);
+                    exit(EXIT_FAILURE);
+                }
             }
 
             if (DEBUG) {

@@ -7,10 +7,10 @@
 #include <unistd.h>
 
 #define PORT 5555
-#define RING_SIZE 1024
+#define RING_SIZE 512
 #define INIT_ADDR 0x20000000
 
-#define COUNT_MEASURE_INTERVAL (1024 * 5) // match the message sent by client
+#define COUNT_MEASURE_INTERVAL (512 * 5) // match the message sent by client
 
 uint32_t g_current_addr = INIT_ADDR;
 struct timespec g_start, g_end;

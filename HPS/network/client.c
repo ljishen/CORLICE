@@ -7,7 +7,7 @@
 
 #define PORT 5555
 #define SERVERHOST "192.168.1.129"
-#define NUM_ADDRS_GEN (1024 * 5)
+#define NUM_ADDRS_GEN (512 * 5)
 
 void write_to_server(int filedes) {
   int count = 0;
