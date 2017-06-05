@@ -28,8 +28,8 @@ void debug_flush(alt_u32 *pSrc, alt_u32 *pStart) {
 }
 
 void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
-    const int kRingSize = pow(2, 9);
-    const int kCacheSize = pow(2, 6);
+    const int kRingSize = pow(2, 5);
+    const int kCacheSize = pow(2, 3);
     const alt_u32 *kEndAddr = (alt_u32 *) baseAddr + kRingSize;
 
     struct cuckoo_hash hash_table;
@@ -63,9 +63,8 @@ void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
             // Insert address into hash table
             if (CUCKOO_HASH_FAILED
                     == cuckoo_hash_insert(&hash_table, pSrc, kItemSize, pSrc)) {
-                fprintf(stderr,
-                        "\n\n### Fail to insert 0x%08X=0x%08X "
-                                "into table (%d elements in the table) ###\n\n",
+                fprintf(stderr, "\n\n### Fail to insert 0x%08X=0x%08X "
+                        "into table (%d elements in the table) ###\n\n",
                         (unsigned int) *pSrc, (unsigned int) *pSrc,
                         cuckoo_hash_count(&hash_table));
                 cuckoo_hash_destroy(&hash_table);

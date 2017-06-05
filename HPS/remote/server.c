@@ -59,8 +59,8 @@ void write_mem(uint32_t val) {
   g_measure_curr_count++;
   if (g_measure_curr_count % COUNT_MEASURE_INTERVAL == 0) {
     clock_gettime(CLOCK_MONOTONIC_RAW, &g_end);
-    uint64_t delta_us = (g_end.tv_sec - g_start.tv_sec) * 1000000 +
-                        (g_end.tv_nsec - g_start.tv_nsec) / 1000;
+    uint64_t delta_us = (g_end.tv_sec - g_start.tv_sec) * 1000 +
+                        (g_end.tv_nsec - g_start.tv_nsec) / 1000000;
     printf("\nHandle %d addresses used %" PRIu64 " milliseconds.\n\n",
            COUNT_MEASURE_INTERVAL, delta_us);
 
