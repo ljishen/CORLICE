@@ -28,8 +28,8 @@ void debug_flush(alt_u32 *pSrc, alt_u32 *pStart) {
 }
 
 void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
-    const int kRingSize = pow(2, 5);
-    const int kCacheSize = pow(2, 3);
+    const int kRingSize = pow(2, 6);
+    const int kCacheSize = pow(2, 5);
     const alt_u32 *kEndAddr = (alt_u32 *) baseAddr + kRingSize;
 
     struct cuckoo_hash hash_table;
@@ -53,10 +53,6 @@ void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
         alt_u32 *pStart = pSrc;
         while (pSrc < pStart + fetchSize) {
             if (*pSrc == RESET_VAL) {
-                if (pSrc != pStart) {
-                    alt_dcache_flush(pStart, (pSrc - pStart) * kItemSize);
-                    debug_flush(pSrc, pStart);
-                }
                 break;
             }
 
@@ -102,8 +98,8 @@ void start_mapping_listener(alt_u32 baseAddr, alt_u32 byteLen) {
             pSrc++;
         }
 
-        if (pSrc >= pStart + fetchSize) {
-            alt_dcache_flush(pStart, fetchSize * kItemSize);
+        if (pSrc != pStart) {
+            alt_dcache_flush(pStart, (pSrc - pStart) * kItemSize);
             debug_flush(pSrc, pStart);
         }
 
