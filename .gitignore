@@ -1,3 +1,5 @@
 .metadata
 db
+incremental_db
+
 *.o
